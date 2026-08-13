@@ -190,7 +190,7 @@ function cell(item,i){
   const priceHtml=hasPrice
     ? `<div class="price has-fixed"><span class="fixed-price">${esc(item.price)} €</span></div>`
     : `<div class="price"><span class="euro">€</span></div>`;
-  const ekHtml=item.ek?`<div class="ek-price">EK: ${esc(item.ek)} €</div>`:'';
+  const ekHtml=item.ek?`<div class="ek-price">EK: ${esc(item.ek)}</div>`:'';
   const qsHtml=item.quickService?'<div class="qs-stamp"><span class="qs-stamp-inner">Quick Service</span></div>':'';
 
   return `
